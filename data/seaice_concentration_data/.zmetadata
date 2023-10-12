@@ -1,0 +1,168 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "Conventions": "CF-1.5",
+            "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html",
+            "comment": "Reynolds, et al.(2007) Daily High-Resolution-Blended Analyses for Sea Surface Temperature (available at https://doi.org/10.1175/2007JCLI1824.1). Banzon, et al.(2016) A long-term record of blended satellite and in situ sea-surface temperature for climate monitoring, modeling and environmental studies (available at https://doi.org/10.5194/essd-8-165-2016). Huang, B., C. Liu, V. Banzon, E. Freeman, G. Graham, B. Hankins, T. Smith, and H.-M. Zhang, 2021: Improvements of the Daily Optimum Interpolation Sea Surface Temperature (DOISST) Version 2.1 (available at https://doi.org/10.1175/JCLI-D-20-0166.1). Anomaly is based on 1971-2000 OI.v2 SST. Satellite data: multi-satellite sensor (AVHRR+VIIRS) data. Ice data: NCEP Ice and GSFC Ice. Data less than 15 days old may be subject to revision.",
+            "dataset_title": "NOAA Daily Optimum Interpolation Sea Surface Temperature",
+            "institution": "NOAA/National Centers for Environmental Information",
+            "source": "NOAA/NCEI https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/",
+            "title": "NOAA/NCEI 1/4 Degree Daily Optimum Interpolation Sea Surface Temperature (OISST) Analysis, Version 2.1",
+            "version": "Version 2.1"
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "icec/.zarray": {
+            "chunks": [
+                32,
+                90,
+                180
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                505,
+                720,
+                1440
+            ],
+            "zarr_format": 2
+        },
+        "icec/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "actual_range": [
+                0.009999999776482582,
+                1.0
+            ],
+            "dataset": "NOAA High-resolution Blended Analysis",
+            "level_desc": "Surface",
+            "long_name": "Monthly Mean Sea Ice Concentration",
+            "missing_value": -9.969209968386869e+36,
+            "parent_stat": "Individual Observations",
+            "precision": 2.0,
+            "standard_name": "sea_ice_area_fraction",
+            "statistic": "Monthly Mean",
+            "units": "percent",
+            "valid_range": [
+                0.0,
+                1.0
+            ],
+            "var_desc": "Sea Ice Concentration"
+        },
+        "lat/.zarray": {
+            "chunks": [
+                720
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                720
+            ],
+            "zarr_format": 2
+        },
+        "lat/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "lat"
+            ],
+            "actual_range": [
+                -89.875,
+                89.875
+            ],
+            "axis": "Y",
+            "long_name": "Latitude",
+            "standard_name": "latitude",
+            "units": "degrees_north"
+        },
+        "lon/.zarray": {
+            "chunks": [
+                1440
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440
+            ],
+            "zarr_format": 2
+        },
+        "lon/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "lon"
+            ],
+            "actual_range": [
+                0.125,
+                359.875
+            ],
+            "axis": "X",
+            "long_name": "Longitude",
+            "standard_name": "longitude",
+            "units": "degrees_east"
+        },
+        "time/.zarray": {
+            "chunks": [
+                505
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                505
+            ],
+            "zarr_format": 2
+        },
+        "time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "actual_range": [
+                66352.0,
+                81692.0
+            ],
+            "avg_period": "0000-01-00 00:00:00",
+            "axis": "T",
+            "calendar": "standard",
+            "delta_t": "0000-01-00 00:00:00",
+            "long_name": "Time",
+            "units": "days since 1800-01-01"
+        }
+    },
+    "zarr_consolidated_format": 1
+}

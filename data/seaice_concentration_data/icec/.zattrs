@@ -1,0 +1,25 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "actual_range": [
+        0.009999999776482582,
+        1.0
+    ],
+    "dataset": "NOAA High-resolution Blended Analysis",
+    "level_desc": "Surface",
+    "long_name": "Monthly Mean Sea Ice Concentration",
+    "missing_value": -9.969209968386869e+36,
+    "parent_stat": "Individual Observations",
+    "precision": 2.0,
+    "standard_name": "sea_ice_area_fraction",
+    "statistic": "Monthly Mean",
+    "units": "percent",
+    "valid_range": [
+        0.0,
+        1.0
+    ],
+    "var_desc": "Sea Ice Concentration"
+}
